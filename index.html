@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiverr Responsive Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="img">
+                <img src="logo.svg" alt="Logo">
+                
+                <!-- Hamburger Icon -->
+                <div class="hamburger" id="hamburger-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <!-- Links Section -->
+                <div class="links" id="nav-links">
+                    <a href="#">Fiverr Business</a>
+                    <a href="#">Explore</a>
+                    <a href="#">English</a>
+                    <a href="#">Become a Seller</a>
+                    <a href="#">Sign In</a>
+                    <button>Join Us</button>
+                </div>
+            </div>
+            <div class="text">
+                <h2>
+                    Find the right freelance <br>service, right away
+                </h2>  
+             </div>
+             <div class="searchbar">
+                <input type="text" placeholder="Search for any Services...">
+                <div class="icon"><i class="fa-sharp fa-solid fa-magnifying-glass" id="icon"></i></div>
+            </div>
+            <div class="btns">
+                <h2>Popular:</h2>
+                <div class="btn">
+                    <button>Website Design</button>
+                    <button>Logo Design</button>
+                    <button>Wordpress</button>
+                    <button>AI design</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // JavaScript to toggle the menu on mobile
+        const hamburger = document.getElementById('hamburger-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
